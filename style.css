@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(233, 47%, 7%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lexend+Deca&display=swap');
+
+.container {
+    background: hsl(244, 38%, 16%);
+    margin: auto auto auto auto;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.titulo h1{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color:  hsl(0, 0%, 100%);
+    font-size: xx-large;
+}
+
+.titulo b{
+    color: hsl(277, 64%, 61%);
+    font-weight: 700;
+}
+
+.main{
+    font-family: 'Inter', sans-serif;
+    color:hsla(0, 0%, 100%, 0.6);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+.direito {
+    position: relative;
+    overflow: hidden;
+}
+
+.filtro {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: hsl(273, 100%, 40%, 0.45);
+}
+
+img {
+    min-width: 100%;
+    height: auto;
+}
+
+.data{
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+}
+
+.a p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    font-size: 30px;
+}
+
+.a span {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: hsla(0, 0%, 100%, 0.6)
+}
+
+@media screen and (max-width: 699px) {
+    .container {
+        flex-direction: column-reverse;
+        /* height: 900px; */
+        width: 80%;
+        top: 70px;
+        margin-bottom: 100px;
+        padding-bottom: 40px;
+    }
+    .direito {
+        height: 30%;
+    }
+    .esquerdo {
+        margin: 40px 50px 0px 50px;
+        height: 70%;
+        text-align: center;
+    }
+    .titulo {
+        height: 20%;
+        padding: 0;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    .main {
+        height: 25%;
+        margin-top: 20px;
+        margin: 20px 15px 0 15px;
+        line-height: 1.5em;
+    }
+
+    .data {
+        height: 55%;
+        flex-direction: column;
+        margin: 0px auto 0px auto;
+        padding: 10px;
+    }
+
+    .data div {
+        margin: 20px 0 0px 0;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .filtro {
+        height: 99%;
+    }
+
+    .a span {
+        font-size: 11px;
+        font-weight: 200;
+        letter-spacing: 2px;
+    }
+
+}
+
+@media screen and (min-width: 700px) {
+    .container {
+        flex-direction: row;
+        height: 446px;
+        padding: 0px;
+        margin-top: 9%;
+        width: 78%;
+    }
+
+    .titulo {
+        margin: 60px 0px 30px 60px;
+    }
+
+    .main {
+        margin: 60px 100px 30px 60px;
+    }
+
+    .esquerdo {
+        width: 50%;
+    }
+    .direito {
+        width: 50%;
+    }
+    .data {
+        margin: 80px 58px 30px 60px;
+    }
+}
+
+
+
+
+
+
